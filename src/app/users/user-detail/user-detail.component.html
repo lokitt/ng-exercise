@@ -1,0 +1,19 @@
+<div class="container">
+  <button mat-raised-button class="back-btn" (click)="goBack()">Take me back!</button>
+  <mat-card class="user-card">
+    <mat-card-header>
+      <mat-card-title>{{user?.first_name}} {{user?.last_name}}</mat-card-title>
+      <mat-card-subtitle>{{user?.email}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src={{user?.avatar}} class="user-avatar">
+    <mat-card-content>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet arcu elementum, consectetur lacus
+        vel, cursus lacus.
+        Curabitur dictum fermentum eros, quis tristique elit placerat dictum. Nunc diam metus, tempus vitae bibendum
+        hendrerit, lacinia et libero.
+        Nulla non augue et lacus fringilla vehicula at eget est. Sed condimentum molestie imperdiet.
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
